@@ -1,0 +1,86 @@
+[
+  {
+    "_id": "qGEm7S",
+    "name": "dog toy ",
+    "price": 25,
+    "labels": [
+      "Art ",
+      "Doll ",
+      "Puzzle "
+    ],
+    "createdAt": 1684825675217,
+    "inStock": true
+  },
+  {
+    "_id": "ZkQTSQ",
+    "name": "cat toy ",
+    "price": 48,
+    "labels": [
+      "Puzzle ",
+      "Battery Powered ",
+      "Doll "
+    ],
+    "createdAt": 1684825675217,
+    "inStock": true
+  },
+  {
+    "_id": "irY6Fo",
+    "name": "car toy ",
+    "price": 59,
+    "labels": [
+      "On wheels ",
+      "Outdoor ",
+      "Box game "
+    ],
+    "createdAt": 1684825675217,
+    "inStock": true
+  },
+  {
+    "_id": "vaNQ1z",
+    "name": "robot toy ",
+    "price": 89,
+    "labels": [
+      "Box game ",
+      "On wheels ",
+      "Baby "
+    ],
+    "createdAt": 1684825675217,
+    "inStock": true
+  },
+  {
+    "_id": "cH6PbR",
+    "name": "bug toy ",
+    "price": 15,
+    "labels": [
+      "Outdoor ",
+      "Puzzle ",
+      "On wheels "
+    ],
+    "createdAt": 1684825675217,
+    "inStock": true
+  },
+  {
+    "_id": "COHZq",
+    "name": "Random Pet Toy",
+    "price": 73,
+    "labels": [
+      "Baby ",
+      "Outdoor ",
+      "Doll "
+    ],
+    "createdAt": 1684844995554,
+    "inStock": true
+  },
+  {
+    "name": "plane toy",
+    "price": 58,
+    "inStock": true,
+    "labels": [
+      "On wheels ",
+      "Battery Powered ",
+      "Baby "
+    ],
+    "createdAt": 1684852958597,
+    "_id": "mQCU1"
+  }
+]

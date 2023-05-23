@@ -1,0 +1,31 @@
+.main-layout {
+  display: grid;
+  grid-template-columns: 2em 1fr 2em;
+  align-items: start;
+}
+
+.app.main-layout {
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  max-width: 800px;
+  padding: 1em;
+  margin: auto;
+}
+
+.main-layout>* {
+  grid-column: 2;
+}
+
+.main-layout .full {
+  grid-column: 1/-1;
+}
+
+footer {
+  background-color: var(--clr1);
+  color: var(--clr1bg);
+  padding: 1em;
+  text-align: center;
+}
