@@ -1,6 +1,6 @@
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import './assets/style/main.css';
+import './assets/style/main.scss';
 
 import { store } from './store/store';
 
@@ -11,6 +11,7 @@ import { About } from './views/about';
 import { ToyIndex } from './views/toy-index';
 import { ToyEdit } from './views/toy-edit';
 import { ToyDetails } from './views/toy-details';
+import { ToyCharts } from './views/toy-charts';
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
                     <Route element={<ToyEdit />} path="/toy/edit" />
                     <Route element={<ToyEdit />} path="/toy/edit/:toyId" />
                     <Route element={<ToyDetails />} path="/toy/:toyId" />
+                    <Route element={<ToyCharts />} path="/toy/charts" />
                 </Routes>
             </main>
             <AppFooter />

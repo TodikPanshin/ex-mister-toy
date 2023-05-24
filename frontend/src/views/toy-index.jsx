@@ -52,15 +52,16 @@ export function ToyIndex() {
 
     return <section>
         <h3>Toys App</h3>
-        <main>
+        <div className='toy-app'>
             <button><Link to={`/toy/edit`}>Add Toy</Link></button>
             <button onClick={onAddToy}>Add random Toy ⛐</button>
+            <button><Link to={`/toy/charts`}>show charts</Link></button>
             <ToyFilter onSetFilter={onSetFilter} />
              {isLoading && <h4>Loading...</h4>}
             <ToyList
                 toys={toys}
                 onRemoveToy={onRemoveToy}
             />
-        </main>
+        </div>
     </section>
 }

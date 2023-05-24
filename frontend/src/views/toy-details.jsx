@@ -21,7 +21,7 @@ export function ToyDetails() {
             })
     }, [])
 
-    console.log(toy);
+    // console.log(toy);
 
     if (!toy) return <h1>loadings....</h1>
     return toy && <div>

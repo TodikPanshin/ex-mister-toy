@@ -18,7 +18,8 @@
     "labels": [
       "Puzzle ",
       "Battery Powered ",
-      "Doll "
+      "Doll ",
+      "Art"
     ],
     "createdAt": 1684825675217,
     "inStock": true
@@ -26,7 +27,7 @@
   {
     "_id": "irY6Fo",
     "name": "car toy ",
-    "price": 59,
+    "price": 60,
     "labels": [
       "On wheels ",
       "Outdoor ",

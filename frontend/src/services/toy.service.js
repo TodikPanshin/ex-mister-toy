@@ -36,7 +36,7 @@ function save(toy) {
 
     // if (toy._id) {
     //     // return storageService.put(STORAGE_KEY, toy)
-    
+
     //     return httpService.put(BASE_URL, toy)
     // } else {
     //     // return storageService.post(STORAGE_KEY, toy)
@@ -48,7 +48,7 @@ function save(toy) {
 function getDefaultFilter(searchParams = { get: () => { } }) {
     return {
         name: '',
-        maxPrice: 0,
+        maxPrice: 100,
         inStock: null,
         labels: [],
     }
@@ -85,9 +85,9 @@ function _getRandomLabels(size = 3) {
 function _createTodos() {
     let Toys = utilService.loadFromStorage(STORAGE_KEY)
     if (!Toys || !Toys.length) {
-        const toyNames=['dog toy ','cat toy ','car toy ','robot toy ','bug toy ']
+        const toyNames = ['dog toy ', 'cat toy ', 'car toy ', 'robot toy ', 'bug toy ']
 
-        Toys= toyNames.map(toyName=> _createToy(toyName)) 
+        Toys = toyNames.map(toyName => _createToy(toyName))
         utilService.saveToStorage(STORAGE_KEY, Toys)
     }
 }
@@ -112,4 +112,3 @@ function _createToy(name) {
 //     createdAt: 1631031801011,
 //     inStock: true,
 // }
-// 

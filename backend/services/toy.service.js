@@ -21,7 +21,7 @@ function query(filterBy = {}) {
     //     // filter by status (sold out / in stock)
     // }
 
-    if (maxPrice !== undefined && maxPrice !== '') {
+    if (maxPrice !== undefined && maxPrice !== 0) {
         toysToDisplay = toysToDisplay.filter(toy => toy.price <= maxPrice)
     }
 
