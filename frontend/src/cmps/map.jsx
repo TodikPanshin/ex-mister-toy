@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 import { useState } from 'react'
+import { keyService } from "../services/api-key";
 // import { Button } from '@material-ui/core'
 
 function Marker() {
@@ -43,7 +44,7 @@ export default function Map() {
             })}
             <div style={{ height: '100vh', width: '100%' }}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyDyfAKpN05bJPgve7o6my-sutOHsaV6Y-A" }}
+                    bootstrapURLKeys={{ key: keyService.getGmapsKey() }}
                     defaultCenter={center}
                     center={center}
                     defaultZoom={zoom}
