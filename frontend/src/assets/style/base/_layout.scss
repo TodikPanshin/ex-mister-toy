@@ -1,6 +1,6 @@
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 1000px 1fr;
+   grid-template-columns: $layoutPadding 1fr $layoutPadding;
   align-items: start;
 
 
@@ -19,6 +19,17 @@
   grid-column: 1/-1;
 }
 
+@include for-narrow-layout {
+  @include layoutGTC($break-narrow);
+}
+
+@include for-normal-layout {
+  @include layoutGTC($break-normal);
+}
+
+@include for-wide-layout {
+  @include layoutGTC($break-wide);
+}
 
 .container {
   max-width: 800px;

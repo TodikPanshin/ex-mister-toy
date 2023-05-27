@@ -1,14 +1,31 @@
+
+// COLOR PALETTE
 :root {
-  --clr1: #0a9396;
-  --clr2: #ae2012;
+  --clr1: #222831;
+  --clr2: #393E46;
+  --clr3: #00ADB5;
+  --clr4: #EEEEEE;
+  --clr5: #2B2A33;
+  --clr6: #42414D;
+  --clr7: #F08A5D;
 
-  --clr1bg: #94d2bd;
-  --clr1bg-light: #c1f1e1;
-  --clr2bg: #ee9b00;
-  --clr2bg-light: #e9d8a6;
-
-  --gray1: rgb(240, 240, 240);
-  --gray2: rgb(155, 155, 155);
-  --gray3: rgb(44, 44, 44);
+ 
 
 } 
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-mobile: 600px;
+$break-narrow: 1200px;
+$break-normal: 1360px;
+$break-wide: 1920px;
+
+$padded-break-mobile: $break-mobile + $layoutPadding * 2;
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
+
+// CARD
+$min-wide-card:300px

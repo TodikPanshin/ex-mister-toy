@@ -1,18 +1,10 @@
-button {
-    cursor: pointer;
-    background-color: var(--clr2bg);
-    margin: 0.5em;
-    border: 0;
-    padding: 0.5em 0.8em;
-    border-radius: 4px;   
-}
 
-button:hover {
-    background-color: var(--clr2);
-    color: white;
-    transition: .3s;
-}
-input:focus {
-    background-color: var(--clr1bg);
+input,select {
+    background-color: var(--clr5);
+    color:var(--clr3) ;
+
+&:focus {
+    // background-color: var(--clr4);
     transition: background-color 1s;
+}
 }

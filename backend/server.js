@@ -71,11 +71,12 @@ app.get('/api/toy', (req, res) => {
 // Add
 app.post('/api/toy', (req, res) => {
 
-    const { name, inStock, price, labels } = req.body
+    const { name, inStock, price, url, labels } = req.body
 
     const toy = {
         name,
         price: +price,
+        url,
         inStock,
         labels,
         createdAt: Date.now()
@@ -94,11 +95,12 @@ app.post('/api/toy', (req, res) => {
 // Edit
 app.put('/api/toy', (req, res) => {
 
-    const { name, price, _id, inStock, labels, createdAt } = req.body
+    const { name, price, _id, inStock, labels, url } = req.body
     const toy = {
         _id,
         name,
         inStock,
+        url,
         price: +price,
         labels: [...labels],
     }

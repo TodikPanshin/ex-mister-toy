@@ -48,9 +48,13 @@ function save(toy) {
 function getDefaultFilter(searchParams = { get: () => { } }) {
     return {
         name: '',
-        maxPrice: 100,
-        inStock: null,
+        maxPrice: '',
+        inStock: 'all',
         labels: [],
+        sort: 'created',
+        sortOrder: 'ascending',
+        pageIdx: 1,
+        pageSize: 20
     }
 }
 
@@ -59,8 +63,9 @@ function getEmptyToy() {
         _id: '',
         name: '',
         price: utilService.getRandomIntInclusive(1, 99),
+        url:'',
         labels: _getRandomLabels(),
-        createdAt: Date.now(),
+        createdAt:'',
         inStock: true,
     }
 }
@@ -82,7 +87,7 @@ function _getRandomLabels(size = 3) {
     return list
 }
 
-function _createTodos() {
+function _createToys() {
     let Toys = utilService.loadFromStorage(STORAGE_KEY)
     if (!Toys || !Toys.length) {
         const toyNames = ['dog toy ', 'cat toy ', 'car toy ', 'robot toy ', 'bug toy ']
@@ -97,6 +102,7 @@ function _createToy(name) {
         _id: utilService.makeId(),
         name,
         price: utilService.getRandomIntInclusive(1, 99),
+        url:'',
         labels: _getRandomLabels(),
         createdAt: Date.now(),
         inStock: true,

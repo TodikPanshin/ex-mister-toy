@@ -22,7 +22,7 @@ export function toyReducer(state = initialState, action) {
         case SET_TOYS:
             return { ...state, toys: action.toys }
         case REMOVE_TOY:
-            toys = state.toys.filter(c => c._id !== action.toyId)
+            toys = state.toys.filter(toy => toy._id !== action.toyId)
             return { ...state, toys }
         case ADD_TOY:
             toys = [...state.toys, action.toy]

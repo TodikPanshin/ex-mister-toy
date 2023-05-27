@@ -1,16 +1,18 @@
 .app-header {
   background-color: var(--clr1);
   color: var(--clr1bg);
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  padding: 1em 0;
 
+.test{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav a:not(:last-child) {
   margin-inline-end: .9em;
 }
 
 nav a:active {
   color: purple;
+}
 }

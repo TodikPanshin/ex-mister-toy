@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-html {
-}
+html {}
 
 body {
   margin: 0;
-  color: var(--gray3);
+  color: var(--clr3);
+  background-color: var(--clr6);
 }
 
 h1,
@@ -27,9 +27,34 @@ p {
 a {
   text-decoration: none;
   color: unset;
+
+  &.active {
+    text-decoration: overline;
+  }
 }
 
+button {
+  cursor: pointer;
+  background-color: var(--clr4);
+  margin: 0.5em;
+  border: 0;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
 
+  &.clicked {
+    background-color: var(--clr3);
+  }
+
+  &:hover {
+    background-color: var(--clr2);
+    color: var(--clr4);
+    transition: .3s;
+  }
+}
+
+.sortOrder-btn {
+  background-color: var(--clr7);
+}
 
 /* Dont stretch my Media */
 img,
@@ -42,29 +67,4 @@ object {
 /* Simple and useful CSS Debugging Technique */
 .debug * {
   outline: 1px solid gold
-}
-
-a.active {
-  text-decoration: overline;
-}
-
-
-
-.popup-menu {
-    position: fixed;
-    flex-direction: column;
-    padding: 40px;
-    width: 40vw;
-    align-items: center;
-    height: auto;
-    background-color: rgb(248, 250, 247);
-    border: 1px solid #bebebe;
-    box-shadow: 1px 2px 16px #000000a6;
-    display: flex;
-    inset: 0;
-    margin: auto;
-    height: fit-content;
-}
-.popup-menu h1 {
-    font-size: 1.5em;
 }
